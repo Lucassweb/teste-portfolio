@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.parent {
+    display: flex;
+}
+
+.sidebar-pos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sidebar {
+    width: 20%; /* largura*/
+    height: 100%;  /* Altura*/
+    position: fixed;
+    background-color: palevioletred;
+}
+
+.sidebar-img {
+    text-align: center;
+}
+
+.sidebar-img img {
+    width: 40%;
+    border-radius: 50%;
+    border: 8px solid #c78a9e;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu .selecionar {
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: #ee1b61;
+    
+    text-decoration: underline;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.4;
+}
+
+.content {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 20%;
+    overflow-y: auto;
+    padding: 0 3%;
+}
+
+.content .descricao {
+    transform: translateY(-50%);
+    top: 50%;
+    position: relative;
+}
+
+.content .descricao > h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.content .descricao > h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.content .descricao > p {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.content .descricao h2 > span,
+.content .descricao h3 > span {
+    color: #c78a9e;;
+}
+
+
+/* Experencia profissional */
+
+.experiencia .experiencia-vick > h2 {
+    font-size: 37px;
+    color: #c78a9e;
+    margin-bottom: 12px;
+}
+
+.experiencia .experiencia-vick p {
+    font-size: 22px;
+}
+
+.experiencia .experiencia-vick p > span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.experiencia .experiencia-vick {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+}
+
+/* Formaçao educacional */
+
+.formacao .formacao-vick {
+    position: absolute;
+    top: 93%;
+    left: 23%;
+}
+
+.formacao .formacao-vick h2 {
+    font-size: 37px;
+    color: #c78a9e;
+}
+
+.formacao .formacao-vick > p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Competencia e habilidades */
+
+.habilidades {
+    position: absolute;
+    top: 105%;
+    left: 23%;
+}
+
+.habilidades > h2 {
+    font-size: 37px;
+    color: #c78a9e;
+}
+
+.lista-habilidades {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.lista-habilidades li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.lista-habilidades li:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
